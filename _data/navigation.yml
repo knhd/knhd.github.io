@@ -1,22 +1,16 @@
 # main links links
 main:
-  - title: "Publications"
-    url: /publications/
+  - title: "Salaires enseignants"
+    url: /salaires/
 
-  - title: "Talks"
-    url: /talks/    
+  - title: "Parcoursup"
+    url: /parcoursup/    
 
-  - title: "Teaching"
-    url: /teaching/    
+  - title: "SES"
+    url: /ses/    
     
-  - title: "Portfolio"
-    url: /portfolio/
+  - title: "Ségrégation et mixité sociale"
+    url: /mixite/
         
-  - title: "Blog Posts"
-    url: /year-archive/
-    
-  - title: "CV"
-    url: /cv/
-    
-  - title: "Guide"
-    url: /markdown/
+  - title: "Autres"
+    url: /autres/
