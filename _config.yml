@@ -10,7 +10,7 @@ locale                   : "fr-FR"
 title                    : "Kevin Hédé / Site personnel"
 title_separator          : "-"
 name                     : &name "Kevin Hédé"
-description              : &description "personal description"
+description              : &description "Professeur de sciences économiques et sociales"
 url                      : https://knhd.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "knhd/knhd.github.io"
@@ -87,7 +87,7 @@ author:
   employer         :
   pubmed           : 
   googlescholar    : 
-  email            :
+  email            : "kevin.hede@gmail.com"
   researchgate     : 
   uri              :
   bitbucket        :
