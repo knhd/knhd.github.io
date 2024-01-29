@@ -175,33 +175,22 @@ kramdown:
 
 # Collections
 collections:
-  teaching:
+  parcoursup:
     output: true
     permalink: /:collection/:path/
-  publications:
+  salaires:
     output: true
     permalink: /:collection/:path/
-  portfolio:
+  ses:
     output: true
     permalink: /:collection/:path/
-  talks:
+  mixite:
     output: true
     permalink: /:collection/:path/
 
 
 # Defaults
 defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
   # _pages
   - scope:
       path: ""
@@ -209,37 +198,37 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _teaching
+  # _parcoursup
   - scope:
       path: ""
-      type: teaching
+      type: parcoursup
     values:
       layout: single
       author_profile: true
       share: true
       comments: true
-  # _publications
+  # _salaires
   - scope:
       path: ""
-      type: publications
+      type: salaires
     values:
       layout: single
       author_profile: true
       share: true
       comments: true
-  # _portfolio
+  # _ses
   - scope:
       path: ""
-      type: portfolio
+      type: ses
     values:
       layout: single
       author_profile: true
       share: true
       comment: true
-  # _talks
+  # _mixite
   - scope:
       path: ""
-      type: talks
+      type: mixite
     values:
       layout: talk
       author_profile: true
