@@ -1,7 +1,7 @@
 ---
 layout: single
-title: "Parcoursup"
-permalink: /parcoursup/
+title: "Salaires enseignants"
+permalink: /salaires/
 author_profile: true
 ---
 
@@ -9,7 +9,7 @@ author_profile: true
 
 A propos
 ======
-* Cette page rassemble mon travail de visualisation sur les données parcoursup
+* Cette page rassemble mon travail de visualisation sur l'évolution des salaires enseignants sur longue période
 
 {% for post in site.publications reversed %}
   {% include archive-single.html %}
