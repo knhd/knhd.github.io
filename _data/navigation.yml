@@ -2,6 +2,9 @@
 main:
   - title: "Salaires enseignants"
     url: /salaires/
+  
+  - title: "Concours enseignants"
+    url: /concours/  
 
   - title: "Parcoursup"
     url: /parcoursup/    
@@ -9,7 +12,7 @@ main:
   - title: "SES"
     url: /ses/    
     
-  - title: "Ségrégation et mixité sociale"
+  - title: "IPS et mixité sociale"
     url: /mixite/
         
   - title: "Autres"

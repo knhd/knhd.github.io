@@ -1,7 +1,6 @@
 ---
 permalink: /
 title: "A propos"
-excerpt: "A propos"
 author_profile: true
 redirect_from: 
   - /about/
@@ -19,10 +18,17 @@ Sur l'évolution des salaires enseignants
 -------
 Sur cette [page](https://knhd.github.io/salaires), vous trouverez différents articles retraçant un travail engagé depuis 2020 sur le reconstruction sur longue période de l'évolution des salaires enseignants.
 
+Sur les concours de l'enseignement
+-------
+Sur cette [page](https://knhd.github.io/concours), vous trouverez différentes statistiques sur l'évolution des inscrits, des postes et des amis aux concours de l'enseignement
+
 Sur les Sciences économiques et sociales
 -------
 Sur cette [page](https://knhd.github.io/ses), vous trouverez différents articles retraçant l'ensemble des données collectées sur l'enseignement de sciences économiques et sociales depuis 1967
 
+Sur Parcoursup
+-------
+Sur cette [page](https://knhd.github.io/parcoursup), vous trouverez différents élements concernant l'affectation dans l'enseignement supérieur en lien avec les disciplines et spécialités choisies au lycée
 
 
 
