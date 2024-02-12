@@ -1,8 +1,9 @@
 ---
-layout: single
 title: "Mixité et ségrégation sociale dans le système scolaire"
+layout: single
 permalink: /mixite/
-author_profile: true
+output: pdf_document
+author_profile: yes
 ---
 
 {% include base_path %}
