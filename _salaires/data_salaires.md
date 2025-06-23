@@ -1,18 +1,15 @@
 ---
-layout: single
 title: "Salaires enseignants"
-permalink: /salaires/
-author_profile: true
-editor_options: 
-  markdown: 
-    wrap: 72
+collection: salaires
+permalink: /salaires/data_salaires
+author_profile: yes
 ---
 
 {% include base_path %}
 
 # L'évolution des salaires enseignants
 
-Kevin Hédé 2
+Kevin Hédé
 
 ## Présentation des données
 

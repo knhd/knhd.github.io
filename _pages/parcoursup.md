@@ -11,8 +11,13 @@ A propos
 ======
 * Cette page rassemble mon travail de visualisation sur les données parcoursup
 
+1.  [L'orientation sur Parcoursup des élèves suivant la spécialité SES en 2024](/parcoursup/orientation_ses)
+2.  [Taux d'accès et taux d'élitisme scolaire des formations sur Parcoursup](/parcoursup/parcoursup)
+
 Par exemple
 <iframe width="900" height="800" frameborder="0" scrolling="no" src="parcoursup_2023_all"> </iframe>
+
+
 
 {% for post in site.publications reversed %}
   {% include archive-single.html %}

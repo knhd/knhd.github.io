@@ -10,7 +10,7 @@ redirect_from:
 Page personnelle de Kevin Hédé
 =====
 Ce site présente une partie de mon travail de recherche et de visualisation sur les données relatives à l'éducation.
-Enseignant de SES, je m'intéresse aux données statistiques sur l'éducation et travaille, en amateur, sur leur visualisation.
+Enseignant de SES, je m'intéresse aux données statistiques sur l'éducation et travaille, en amateur, sur leur visualisation et sur la reconstitution de séries longues.
 
 Vous trouverez sur ce site différents articles en lien avec cet intérêt
 
@@ -20,7 +20,7 @@ Sur cette [page](https://knhd.github.io/salaires), vous trouverez différents ar
 
 Sur les concours de l'enseignement
 -------
-Sur cette [page](https://knhd.github.io/concours), vous trouverez différentes statistiques sur l'évolution des inscrits, des postes et des amis aux concours de l'enseignement
+Sur cette [page](https://knhd.github.io/concours), vous trouverez différentes statistiques sur l'évolution des inscrits, des postes et des admis aux concours de l'enseignement
 
 Sur les Sciences économiques et sociales
 -------

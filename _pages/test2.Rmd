@@ -1,0 +1,57 @@
+---
+title: "Untitled"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+```
+
+## Evolution du nombre de postes et d'admis au CAPES Externe
+
+Ce document est un exemple de page web créé pour présenter un graphique de l'évolution du CAPES depuis 1960
+
+```{r library}
+library(tidyverse)
+library(haven)
+library(questionr)
+library(readxl)
+library(patchwork)
+library(esquisse)
+library(ggthemes)
+library(rpivotTable)
+library(MetBrewer)
+library(rvest)
+```
+
+```{r data}
+concours <- read_excel("C:/Users/Kevin/Cozy Drive/Recherche/Histoire education/kh-sl_concours.xlsx", sheet = "total_agreg_capes")
+agreg <- read_excel("C:/Users/Kevin/Cozy Drive/Recherche/Histoire education/kh-sl_concours.xlsx", sheet = "agreg_discipline")
+agreg_sexe <- read_excel("C:/Users/Kevin/Cozy Drive/Recherche/Histoire education/kh-sl_concours.xlsx", sheet = "agreg_discipline_sexe")
+capes <- read_excel("C:/Users/Kevin/Cozy Drive/Recherche/Histoire education/kh-sl_concours.xlsx", sheet = "capes_discipline")
+```
+
+## Evolution du nombre de postes et d'admis au CAPES Externe
+
+Voici un exemple de graphique
+
+```{r capes, fig.width=25,fig.height=20}
+ggplot(filter(concours, concours=="capes")) + 
+  geom_line(aes(x=annee, y=inscrits, color="Candidats inscrits au CAPES (tous statuts)"), size=3) +
+  geom_ribbon(aes(x=annee, ymin=ifelse(postes>admis, admis, postes), ymax=ifelse(postes>admis, postes, postes), fill="Deficit de recrutement"), alpha=0.4) + 
+  geom_bar(aes(x=annee, weight=IPES, fill="Nombre de candidats issus des IPES et nombre d'allocations d'année préparatoire et d'IUFM"), alpha=1) +
+  geom_bar(aes(x=annee, weight=admis, fill="Nombre d'admis au CAPES"), size=3, alpha=0.8) +
+  geom_bar(aes(x=annee, weight=admis_ipes, fill="Nombre d'admis issus des IPES"), size=3, alpha=1) +
+  geom_line(aes(x=annee, y=postes, color="Nombre de postes au CAPES"), size=3, alpha=1) +
+  scale_x_continuous(limits=c(1959.5,2023.5), breaks= seq(1960,2023, by=2), expand=c(0.01,0.01)) +
+  scale_y_sqrt(breaks=c(0,2000,4000,6000,8000,10000,20000,30000,40000,50000,60000), limits=c(0,70000), expand=c(0,0)) +
+  scale_color_manual(values = c("Nombre de postes au CAPES" = "darkmagenta","Candidats inscrits au CAPES (tous statuts)" = "#122c43")) +
+  scale_fill_manual(values = c("Nombre d'admis au CAPES"="#458545", "Nombre d'admis issus des IPES"="lightgreen", "Nombre de candidats issus des IPES et nombre d'allocations d'année préparatoire et d'IUFM"="blue", "Deficit de recrutement" = "indianred1")) +
+  labs(title = "Evolution du nombre de postes et du nombre d'admis au CAPES Externe",
+       fontface=2, x="",
+       y="Nombre de postes, de candidats et d'admis au CAPES",
+       subtitle = "1960-2023", caption = "Graphique: K. Hédé (@knhd), avril 2024") + 
+    theme_bw(base_size=25) + theme(legend.title=element_blank(), legend.position ="top") + guides(fill=guide_legend(nrow =2), color=guide_legend(nrow =2))
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
