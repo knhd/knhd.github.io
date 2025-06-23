@@ -1,7 +1,7 @@
 ---
 title: "Parcoursup"
 collection: "Parcoursup"
-permalink: /parcoursup/
+permalink: /parcoursup/parcoursup_2023
 ---
 
 <p style="text-align:justify;">
